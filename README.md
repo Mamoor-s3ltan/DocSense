@@ -95,11 +95,6 @@ npm run dev
 
 ---
 
-### 📤 Document Upload
-![Upload Page](./screenshots/UploadModal.png)
-
----
-
 ### 💬 Chat Interface
 ![Chat Interface](./screenshots/UploadDocs.png)
 

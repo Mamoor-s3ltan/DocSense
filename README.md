@@ -1,40 +1,108 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🧠 DocSense – AI-Powered Document Chat (RAG)
 
-First, run the development server:
+DocSense is an AI-powered document assistant that allows users to upload documents and chat with them using **Retrieval-Augmented Generation (RAG)**.
+
+Instead of generating generic AI responses, DocSense retrieves relevant document chunks using vector embeddings and produces context-aware answers grounded in the uploaded content.
+
+---
+
+## 🚀 Features
+
+- 📄 Document upload & processing  
+- ✂️ Intelligent text chunking  
+- 🧠 Embedding generation  
+- 📦 Vector storage using Supabase  
+- 🔍 Semantic similarity search  
+- 💬 Conversational chat interface  
+- 🦙 Local LLM inference using Ollama  
+- 🔐 Secure authentication system  
+- 🎨 Modern UI with Tailwind CSS & Material UI  
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Material UI
+
+### Backend / AI Layer
+- LangChain (RAG pipeline)
+- Ollama (Local LLM execution)
+
+### Database & Authentication
+- Supabase (Vector embeddings storage)
+- Supabase Authentication
+
+---
+
+## 🧠 How It Works (RAG Architecture)
+
+1. User uploads a document  
+2. The document is split into smaller chunks  
+3. Embeddings are generated for each chunk  
+4. Embeddings are stored in Supabase  
+5. When a user asks a question:
+   - Relevant chunks are retrieved via semantic search  
+   - Retrieved context is sent to the LLM (Ollama)  
+   - The AI generates a grounded response  
+
+This ensures answers are based strictly on the uploaded document.
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Mamoor-s3ltan/DocSense.git
+cd DocSense
 ```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+### 3️⃣ Setup Environment Variables
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+```
+### 4️⃣ Run Ollama Locally
+```bash
+ollama run qwen2:7b
+```
+### 5️⃣ Start Development Server
+```bash
+npm run dev
+```
+## 🎯 Project Goals
+- Build a full-stack AI SaaS application
+- Implement a production-style RAG architecture
+- Work with vector databases and semantic search
+- Run LLMs locally for privacy and performance
+- Combine modern UI with AI engineering
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏠 Home Page
+![Home Page](./screenshots/HomePage.png)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 📤 Document Upload
+![Upload Page](./screenshots/UploadModal.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 💬 Chat Interface
+![Chat Interface](./screenshots/UploadDocs.png)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# DocSense
->>>>>>> 0049544961d06e7b4c5ab0a6ccb94352cc72cd63

@@ -13,9 +13,12 @@ export default function DashboardLayout({
   const router = useRouter();
 
   useEffect(() => {
-    if (!loading && !session) {
+    setTimeout(() => {
+      if (!loading && !session) {
       router.replace("/");
     }
+    }, 3000);
+   
       
     
   }, [loading, session, router]);

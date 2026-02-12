@@ -95,6 +95,9 @@ npm run dev
 
 ---
 
+### Signup Page
+![Auth Page](./screenshots/SignupPage.png)
+
 ### 💬 Chat Interface
 ![Chat Interface](./screenshots/UploadDocs.png)
 
